@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: #f48fb1;
+    font-family: 'Sriracha', cursive;
+}
+
+
+.page__header {
+    border: 2px solid black;
+    background-color: #bf5f82;
+}
+
+
+.page__footer {
+    border: 2px solid black;
+    background-color: #bf5f82;
+}
