@@ -1,19 +1,22 @@
 @charset "UTF-8";
 
 
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #f48fb1;
+    background: linear-gradient(#001970, #303f9f, #666ad1);
     font-family: 'Sriracha', cursive;
+    color: white;
 }
 
 
 .page__header {
-    border: 2px solid black;
-    background-color: #bf5f82;
+    border: 2px solid white;
 }
 
 
 .page__footer {
-    border: 2px solid black;
-    background-color: #bf5f82;
+    border: 2px solid white;
 }
