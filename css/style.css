@@ -89,6 +89,10 @@ section {
     padding-left: 0;
     margin: 0;
     text-align: right;
+    border: 3px solid black;
+    height: 50px;
+    width: auto;
+    color: black;
 }
 
 
