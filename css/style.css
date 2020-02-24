@@ -148,6 +148,9 @@ section.your-active-class .landing__container::after {
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
 
+.my_section {
+
+}
 
 @keyframes rotate {
     from {
