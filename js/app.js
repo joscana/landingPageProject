@@ -1,5 +1,4 @@
 //Global Variables
-
 //Select sections by class name, select navbar by ID
 
 let my_sections = document.getElementsByClassName("my_section");
@@ -25,22 +24,29 @@ function createNavbarLinks () {
 };
 
 
-function setActiveSection (section) {
+function setActiveClass (section) {
     section.classList.add("your-active-class");
 };
 
 
+function removeActiveClass (section) {
+    section.classList.remove("your-active-class");
+};
+
+
+//On scroll, check to see if section is in viewport. If so, adds highlight.
 
 window.addEventListener("scroll", function(e) {
     for (let section of my_sections) {
         let bounds = section.getBoundingClientRect();
         if (bounds.top >= 0 && bounds.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-            setActiveSection(section)
+            setActiveClass(section)
+        }
+        else {
+            removeActiveClass(section);
         }
     };
 });
-
-
 
 
 createNavbarLinks();

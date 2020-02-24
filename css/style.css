@@ -111,7 +111,7 @@ section {
 
 
 .navbar__menu .menu__link:hover {
-    background: #333;
+    background: rgba(0, 0, 255, 0.3);
     color: #fff;
     transition: ease 0.3s all;
 }
@@ -138,33 +138,5 @@ section:nth-of-type(even) .landing__container {
 }
 
 section.your-active-class .landing__container {
-    background-color: red;
-}
-
-section.your-active-class .landing__container::before {
-    opacity: 1;
-    animation: rotate 4s linear 0s infinite forwards;
-}
-
-
-section.your-active-class .landing__container::after {
-    opacity: 1;
-    animation: rotate 5s linear 0s infinite forwards reverse;
-}
-
-.my_section {
-
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg)
-                   translate(-1em)
-                   rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg)
-                   translate(-1em)
-                   rotate(-360deg);
-    }
+    background-color: rgba(0, 0, 255, 0.3);
 }
