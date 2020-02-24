@@ -15,6 +15,7 @@ function createNavbarLinks () {
         let a = document.createElement('a');
         let textNode = document.createTextNode(section.dataset.nav);
         let link = "#" + section.id;
+        listItem.classList.add("menu__link");
         a.appendChild(textNode);
         a.href= link;
         navbarList.appendChild(listItem);
@@ -22,6 +23,24 @@ function createNavbarLinks () {
         count++;
     };
 };
+
+
+function setActiveSection (section) {
+    section.classList.add("your-active-class");
+};
+
+
+
+window.addEventListener("scroll", function(e) {
+    for (let section of my_sections) {
+        let bounds = section.getBoundingClientRect();
+        if (bounds.top >= 0 && bounds.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+            setActiveSection(section)
+        }
+    };
+});
+
+
 
 
 createNavbarLinks();

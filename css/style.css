@@ -86,6 +86,7 @@ section {
 
 
 .navbar__menu ul {
+    display: flex;
     padding-left: 0;
     margin: 0;
     text-align: right;
@@ -102,7 +103,7 @@ section {
 
 
 .navbar__menu .menu__link {
-    display: block;
+    display: flex;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -136,6 +137,9 @@ section:nth-of-type(even) .landing__container {
     text-align: right;
 }
 
+section.your-active-class .landing__container {
+    background-color: red;
+}
 
 section.your-active-class .landing__container::before {
     opacity: 1;
