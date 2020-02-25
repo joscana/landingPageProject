@@ -18,18 +18,19 @@ function createNavbarLinks () {
         a.appendChild(textNode);
         a.href= link;
         navbarList.appendChild(listItem);
-        listItem.appendChild(a)
+        listItem.appendChild(a);
         count++;
     };
+
 };
 
 
-function setActiveClass (section) {
+function setActiveClass(section) {
     section.classList.add("your-active-class");
 };
 
 
-function removeActiveClass (section) {
+function removeActiveClass(section) {
     section.classList.remove("your-active-class");
 };
 
